@@ -1,0 +1,87 @@
+.modal-overlay-add-guest {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content-add-guest {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    font-weight: 600;
+  }
+  
+  .guest-form-add-guest label {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .guest-form-add-guest input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .guest-form-add-guest input[type="date"] {
+    width: 200px;
+    height: 50px
+  }
+  
+  .error-add-guest {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .modal-buttons-add-guest {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .confirm-button-add-guest,
+  .cancel-button-add-guest {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .confirm-button-add-guest {
+    background-color: #18304A;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 600;
+    width: 150px;
+    height: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .cancel-button-add-guest {
+    background-color: #ccc;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 600;
+    width: 150px;
+    height: 30px;
+    padding-bottom: 30px;
+  }
+
+  .confirm-button-add-guest:hover {
+    background-color: #0057b3cb;
+  }
+
+  .cancel-button-add-guest:hover {
+  background-color: #aaa8a8
+  }

@@ -1,0 +1,188 @@
+/* General Layout */
+.facilities-container {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.facilities-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.facilities-header h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #18304a;
+  margin: 0; /* To remove any extra margin */
+}
+
+.current-date {
+  margin-left: 70rem; /* Add space between the title and the date */
+  text-align: right;
+  font-size: 18px;
+  color: #4f4f4f;
+  flex-grow: 1; /* This forces the date to the far right */
+  display: flex;
+  justify-content: flex-end; /* Ensures date stays to the right */
+}
+
+/* Tabs and Search Bar */
+.tabs-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tab-button {
+  width: 170px; 
+  padding: 10px 20px;
+  border: 1px solid #18304a;
+  background-color: #fff;
+  color: #18304a;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center; /* Center align the text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.tab-button:hover {
+  background-color: #18304a;
+  color: #fff;
+}
+
+.tab-button.active {
+  background-color: #18304a;
+  color: #fff;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #18304a;
+  box-shadow: 0 0 5px rgba(24, 48, 74, 0.5);
+}
+
+/* Tab Content */
+.tab-content {
+  font-size: 18px;
+  color: #4f4f4f;
+  padding: 20px;
+  
+  border-radius: 4px;
+ 
+}
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  align-items: center; /* Align all elements horizontally */
+  gap: 10px; /* Space between elements */
+  background-color: transparent;
+  padding: 10px;
+  flex-wrap: wrap; /* Allow wrapping of elements if needed */
+}
+
+/* Filter Button */
+.filter-button {
+  background-color: #18304a;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+/* Filter Dropdowns */
+.filter-dropdown {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 120px; 
+  margin-right: 5px;
+}
+
+/* Reset Button */
+.reset-button {
+  background-color: red;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Add Facilities Button - Align to the right */
+.add-facilities-button {
+  background-color: #18304a;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: auto; /* Pushes the button to the right */
+}
+/* Facilities Table */
+.facilities-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.facilities-table th, .facilities-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.facilities-table th {
+  background-color: #18304a;
+  color: white;
+  font-size: 16px;
+}
+
+.facilities-table td {
+  font-size: 14px;
+}
+
+.facilities-table img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.facilities-table button {
+  padding: 5px 10px;
+  background-color: #18304a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.facilities-table button:hover {
+  background-color: #4f79a2;
+}

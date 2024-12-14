@@ -1,0 +1,231 @@
+/* General Container Styles */
+.guest-container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #18304A;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .header h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 350px;
+    margin-left: 450px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: #18304A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 15px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .buttons .add-guest,
+  .buttons .archives {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  .buttons .add-guest,
+  .buttons .archives {
+    background-color: #18304A;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 180px;
+    font-family: "Poppins";
+  }
+  
+  .add-guest:hover,
+  .archives:hover {
+    background-color: #0057b3cb;
+  }
+  
+  .guest-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .guest-table th,
+  .guest-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 300px;
+    font-size: 15px;
+    font-family: "Poppins";
+    color: black;
+  }
+  
+  .guest-table th {
+    background-color: #18304A;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+  }
+  
+  .guest-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .view-button,
+  .archive-button {
+    background-color: #18304A;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    font-weight: 700;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .view-button:hover,
+  .archive-button:hover {
+    background-color: #0057b3cb;
+  }
+  
+  /* Archives Modal */
+  .archive-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .archive-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: auto;
+  }
+  
+  .archive-modal-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #18304A;
+  }
+  
+  .archive-modal-content p {
+    font-size: 16px;
+    color: #4e4e4e;
+  }
+  
+  .modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .confirm-button,
+  .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins";
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .confirm-button {
+    background-color: #18304A;
+    color: white;
+  }
+  
+  .confirm-button:hover {
+    background-color: #255f9e;
+  }
+  
+  .cancel-button {
+    background-color: #ccc;
+    color: #4e4e4e;
+  }
+  
+  .cancel-button:hover {
+    background-color: #aaa8a8;
+  }
+  
+  .title-date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    height: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    .search-bar {
+      flex-direction: column;
+      margin-left: 0;
+    }
+  
+    .search-bar input {
+      width: 100%;
+    }
+  
+    .guest-table th,
+    .guest-table td {
+      font-size: 14px;
+    }
+  
+    .view-button,
+    .archive-button {
+      width: auto;
+      padding: 5px 15px;
+    }
+  
+    .buttons .add-guest,
+    .buttons .archives {
+      width: auto;
+      font-size: 14px;
+    }
+  }
